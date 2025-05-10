@@ -4,7 +4,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 📤 Tecnologias Ultilizadas
 
 📌HTML<br>
-📌CSS
+📌CSS<br>
 📌JavaScript
 
 📁 Estrutura do Projeto
@@ -21,7 +21,11 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 
 2️⃣ Acessar a pasta do projeto:
 
+    cd nome-do-repositorio
 
+📸Sreenshots
+
+![LandingPAge](https://github.com/user-attachments/assets/19112ee5-300b-4151-8a03-5071f1cd4dcd)
 
 
 ### `npm start`
