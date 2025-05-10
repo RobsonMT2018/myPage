@@ -1,7 +1,8 @@
 # Descrição
 Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em React com HTML,CSS e Java Script.
 
-## https://icons8.com/icon/EPjU3y6fHVEV/push-pin Tecnologias Ultilizadas
+##![image](https://github.com/user-attachments/assets/5781efa0-415f-48de-b9e0-bf4cd054114c)
+ Tecnologias Ultilizadas
 
 In the project directory, you can run:
 
