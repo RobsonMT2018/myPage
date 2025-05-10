@@ -1,7 +1,7 @@
 # Descrição
 Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em React com HTML,CSS e Java Script.
 
-##![image](https://github.com/user-attachments/assets/5781efa0-415f-48de-b9e0-bf4cd054114c)
+##![image][size:30](https://github.com/user-attachments/assets/5781efa0-415f-48de-b9e0-bf4cd054114c)
  Tecnologias Ultilizadas
 
 In the project directory, you can run:
