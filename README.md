@@ -7,7 +7,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 📌CSS
 📌JavaScript
 
-📁 ##Estrutura do Projeto
+📁 ### Estrutura do Projeto
 
 
 ![image](https://github.com/user-attachments/assets/53dbcb0e-4426-435e-b5a1-6e0f2da62607)
