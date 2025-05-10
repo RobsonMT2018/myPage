@@ -25,7 +25,8 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 
 📸Sreenshots
 
-![LandingPAge](https://github.com/user-attachments/assets/19112ee5-300b-4151-8a03-5071f1cd4dcd)
+![image](https://github.com/user-attachments/assets/4c885c13-9fa2-496d-bbcd-071b47aa9ab6)
+
 
 
 ### `npm start`
