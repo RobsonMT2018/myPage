@@ -3,7 +3,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 
 📤 Tecnologias Ultilizadas
 
-📌HTML
+📌HTML<br>
 📌CSS
 📌JavaScript
 
