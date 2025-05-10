@@ -1,10 +1,44 @@
 # Descrição
 Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em React com HTML,CSS e Java Script.
 
-##![image][size:30](https://github.com/user-attachments/assets/5781efa0-415f-48de-b9e0-bf4cd054114c)
- Tecnologias Ultilizadas
+##📤 Tecnologias Ultilizadas
 
-In the project directory, you can run:
+📌HTML
+📌CSS
+📌JavaScript
+
+##📁 Estrutura do Projeto
+
+
+mypage/
+├── .gitignore                
+├── package.json             
+├── README.md               
+├── public/                   
+│   ├── index.html            
+│   └── assets/
+│       └── images/
+│           └── icon-page.png  # Ícone da página (favicon)
+└── src/                       # Contém o código fonte da aplicação
+    ├── App.css                # Estilos para o componente App
+    ├── App.js                 # Componente principal da aplicação React
+    ├── index.css              # Estilos globais ou para o ponto de entrada
+    ├── index.js               # Ponto de entrada da aplicação React
+    ├── reportWebVitals.js     # Para medição de performance (padrão do CRA)
+    └── images/
+        └── file.png           # Foto de perfil usada no App.js
+
+
+##📀 Como Execultar o Projeto:
+
+1️ Clone o repositório
+  
+    git clone https://github.com/RobsonMT2018/myPage.git
+
+2️⃣ Acessar a pasta do projeto:
+
+
+
 
 ### `npm start`
 
