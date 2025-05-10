@@ -10,23 +10,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 ##📁 Estrutura do Projeto
 
 
-mypage/
-├── .gitignore                
-├── package.json             
-├── README.md               
-├── public/                   
-│   ├── index.html            
-│   └── assets/
-│       └── images/
-│           └── icon-page.png  # Ícone da página (favicon)
-└── src/                       # Contém o código fonte da aplicação
-    ├── App.css                # Estilos para o componente App
-    ├── App.js                 # Componente principal da aplicação React
-    ├── index.css              # Estilos globais ou para o ponto de entrada
-    ├── index.js               # Ponto de entrada da aplicação React
-    ├── reportWebVitals.js     # Para medição de performance (padrão do CRA)
-    └── images/
-        └── file.png           # Foto de perfil usada no App.js
+![image](https://github.com/user-attachments/assets/53dbcb0e-4426-435e-b5a1-6e0f2da62607)
 
 
 ##📀 Como Execultar o Projeto:
