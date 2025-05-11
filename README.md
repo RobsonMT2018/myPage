@@ -9,8 +9,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 
 📁 Estrutura do Projeto
 
-![image](https://github.com/user-attachments/assets/2ede2207-4860-4ea4-ab00-b22ed97eecbc)
-
+![image](https://github.com/user-attachments/assets/4f21103b-c9f0-4b24-bfa2-a7ed434ebd7d)
 
 
 📀 Como Execultar o Projeto:
