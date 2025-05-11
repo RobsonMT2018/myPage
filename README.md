@@ -10,7 +10,6 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 📁 Estrutura do Projeto
 
 
-![Screenshot_2025-05-11-00-28-14-081_com android chrome](https://github.com/user-attachments/assets/850b1591-77e8-467a-b53f-66632cd9d092)
 
 
 📀 Como Execultar o Projeto:
@@ -25,9 +24,7 @@ Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em Re
 
 📸Sreenshots
 
-![image](https://github.com/user-attachments/assets/4c885c13-9fa2-496d-bbcd-071b47aa9ab6)
-
-
+![Screenshot_2025-05-11-00-28-14-081_com android chrome](https://github.com/user-attachments/assets/850b1591-77e8-467a-b53f-66632cd9d092)
 
 ### `npm start`
 
