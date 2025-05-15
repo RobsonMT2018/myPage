@@ -1,34 +1,39 @@
----------------------------------------------------------
-🔗 ##Descrição
+🔗 Descrição
 
 <p>Este projeto é uma Landing Page que apresenta um novo modelo de portfólio. Desenvolvido com React, HTML, CSS e JavaScript, combina design moderno com uma estrutura funcional e responsiva.</p>
 
+---------------------------------------------------------
+🔗 Tecnologias Ultilizadas
+
+ 📍HTML<br>
+ 📍CSS<br>
+ 📍JavaScript
 
 ---------------------------------------------------------
-📤 Tecnologias Ultilizadas
-
-📌HTML<br>
-📌CSS<br>
-📌JavaScript
 
 📁 Estrutura do Projeto
 
 ![image](https://github.com/user-attachments/assets/4f21103b-c9f0-4b24-bfa2-a7ed434ebd7d)
 
+---------------------------------------------------------
 
-📀 Como Execultar o Projeto:
+🔗 Como Execultar o Projeto:
 
-1️ Clone o repositório
+ 📂 Clone o repositório
   
     git clone https://github.com/RobsonMT2018/myPage.git
 
-2️⃣ Acessar a pasta do projeto:
+ 📂 Acessar a pasta do projeto:
 
     cd nome-do-repositorio
 
+---------------------------------------------------------
 📸Sreenshots
 
 ![Screenshot_2025-05-11-00-28-14-081_com android chrome](https://github.com/user-attachments/assets/850b1591-77e8-467a-b53f-66632cd9d092)
+
+---------------------------------------------------------
+
 
 ### `npm start`
 
