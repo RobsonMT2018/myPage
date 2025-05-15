@@ -1,6 +1,8 @@
 ---------------------------------------------------------
-# Descrição
+## Descrição
+
 <p>Este é um projeto de Landing Page novo modelo de Portifolio, desenvolvido em React com HTML,CSS e Java Script.</p>
+
 ---------------------------------------------------------
 📤 Tecnologias Ultilizadas
 
