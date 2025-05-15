@@ -1,5 +1,5 @@
 ---------------------------------------------------------
-##🔗 Descrição
+#🔗 Descrição
 
 <p>Este projeto é uma Landing Page que apresenta um novo modelo de portfólio. Desenvolvido com React, HTML, CSS e JavaScript, combina design moderno com uma estrutura funcional e responsiva.</p>
 
