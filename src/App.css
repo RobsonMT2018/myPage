@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+/*TAMANHO PARA SCREEN NAVEGADOR WEB*/
+@media screen and (min-width: 600px){
+
+  /* Estilos para o botão que abre/fecha o menu */
+  .side-menu-toggle {
+    position: fixed; /* Ou absolute, dependendo do seu layout */
+    top: 2px;
+    left: 140px; /* Ou right: 20px; se preferir o botão à direita */
+    z-index: 1002; /* Acima do overlay e do menu quando fechado */
+    background-color: #2c3e50; /* Cor de exemplo */
+    color: white;
+    border: none;
+    padding: 1px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px; /* Ajuste o tamanho do ícone */
+    transition: all 0.3s ease;
+  }
+  
+  .side-menu-toggle:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos para o Menu Lateral */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Começa fora da tela à esquerda (ajuste a largura conforme necessário) */
+    width: 100px; /* Largura do menu */
+    height: 100vh; /* Altura total da tela */
+    background-color: #2c3e50; /* Cor de fundo do menu */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: left 0.3s ease-in-out; /* Animação de deslize */
+    z-index: 1001; /* Garante que o menu fique acima do conteúdo da página, mas abaixo do botão de toggle se sobreposto */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side-menu.open {
+    left: 0; /* Move o menu para dentro da tela */
+  }
+  
+  .side-menu-close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px; /* Tamanho do ícone 'X' */
+    cursor: pointer;
+    align-self: flex-end; /* Alinha o botão 'X' à direita dentro do menu */
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  .side-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-menu nav ul li {
+    margin-bottom: 15px;
+  }
+  
+  .side-menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .side-menu nav ul li a:hover {
+    background-color: #34495e; /* Cor de hover para os links */
+  }
+  
+  /* Estilos para o Overlay (fundo escurecido) */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: 1000; /* Abaixo do menu, mas acima do conteúdo da página */
+    display: none; /* Escondido por padrão */
+  }
+  
+  .overlay.open {
+    display: block; /* Mostra o overlay quando o menu está aberto */
+  }
+  
+
+
+:root{
+
+  --color-pagin:#ffffff; /*Cor de fundo da pagina inteira*/
+  --cor-conteiner1:#0D0D0D; /*Cor do conteiner 1 (HOME)*/
+  --cor-text-home:#BBE8F2;  /*Cor Texto home*/
+  --cor-menu-barra:#415c70; /*Cor de menu barras*/
+  --cor-page-section: #55525264;
+  --bg-color-02: #1b1b1b;
+
+  /*Cores Para Teste*/
+  --color-01: #e90000;
+  --color-03: #4400ff;
+  --color-04: #6403ff;
+  --color-05: #66ff00;
+
+}
+
+
+
+
+.menu{
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  position: fixed;
+  z-index: 5;
+  margin-top: 0px;
+}
+
+
+.menu-nav1{
+  display: flex;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 30px;
+  background-color:var(--cor-menu-barra);
+  z-index: 1;
+  
+}
+
+.menu-nav2{
+  display: flex;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 100%;
+  background-color:var(--cor-menu-barra);
+  z-index: 1;
+  
+}
+
+body {
+  background-color:var(--color-pagin);
+  font-family: 'Jost', sans-serif;
+  z-index: -10;
+}
+
+.menu-fundo{
+  margin: 0;
+  padding: 0;
+  background-color:var(--cor-menu-barra);
+  display: flexbox;
+  position: fixed;
+  border-radius: 0 0 50% 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 140px;
+  width: 140px;
+  z-index: 1;
+}
+
+.foto-perfil img{ 
+  margin: 8px;
+  padding: 0px;
+  display: flexbox;
+  position: fixed;
+  background-color: #9085859c;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid #5675a8;
+  box-shadow: 0px 0px 5px #000000;
+  z-index: 2;
+
+}
+
+.social-midia .sm1 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 0px;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm2 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 200px;
+  margin-left: 0px;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm3 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 250px;
+  margin-left: 0px;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm4 a{
+
+  display: block;
+  position: fixed;
+  margin-top:300px;
+  margin-left: 0px;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia:hover .sm1 a{
+  animation: midSocial 3s ease-in-out infinite;
+  color:#8eaef3;
+}
+.social-midia:hover .sm2 a{
+  animation: midSocial 3s ease-in-out infinite;
+  color:rgb(231, 167, 183)
+}
+.social-midia:hover .sm3 a{
+  animation: midSocial 3s ease-in-out infinite;
+  color: #000000;
+}
+.social-midia:hover .sm4 a{
+  animation: midSocial 3s ease-in-out infinite;
+  color: #004070;
+}
+
+
+@keyframes midSocial{
+  
+     0%{
+       transform: rotateY(360deg);
+      }
+      50%{
+        transform: rotateY(0deg);
+      }
+      100%{
+        transform: rotateY(-360deg);
+      }
+}
+
+
+section{
+
+  display: flexbox;
+  position: -ms-page;
+  margin-left: -100px;
+  width: 100px;
+  height: 400px;
+  z-index: -3;
+}
+
+
+
+.home-content{
+  margin: 0px;
+  padding: 5px;
+  background-color: var(--cor-page-section);
+  margin-top: 35px;
+  margin-left: 150px;
+  max-height: 100%;
+  position: absolute;
+  z-index: -2px;
+  min-height: 350px;
+}
+
+.home-tag{
+   
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #d9dfe33e;
+    border-radius: 5%;
+}
+
+section .home-content .home-tag span{
+  color: #66ff00;
+}
+
+section .home-content .home-tag h3{
+  color: #2ac0a7;
+  word-spacing: 6px;
+  line-height: 5px;
+  text-align:  left;
+}
+
+section .home-content .home-tag p{
+  color: #ffffff;
+  text-align:  justify;
+  margin-left: 50px;
+}
+
+footer{
+  
+  font-size: calc(10px + 2vmin);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-02);
+
+}
+}
+
+
+/*TAMANHO PARA SCREEN DE CELULAR*/
+@media screen and (max-width: 700px){
+
+ :root{
+
+  --color-pagin:#161616; /*Cor de fundo da pagina inteira*/
+  --cor-conteiner1:#0D0D0D; /*Cor do conteiner 1 (HOME)*/
+  --cor-text-home:#BBE8F2;  /*Cor Texto home*/
+  --cor-iconMidia:#140a36e4; /*Cor dos icones de midia*/
+  --cor-menu-barra:#2d5070; /*Cor de menu barras*/
+  --cor-page-section: #4c4e9264;
+  --bg-color-02: #1b1b1b;
+
+}
+
+/* Estilos para o botão que abre/fecha o menu */
+.side-menu-toggle {
+  position: fixed; /* Ou absolute, dependendo do seu layout */
+  top:880px;
+  left: 5px; /* Ou right: 20px; se preferir o botão à direita */
+  z-index: 1002; /* Acima do overlay e do menu quando fechado */
+  background-color: var(--cor-iconMidia); /* Cor de exemplo */
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 30px; /* Ajuste o tamanho do ícone */
+  transition: all 0.3s ease;
+}
+
+.side-menu-toggle:hover {
+  background-color: #555;
+}
+
+/* Estilos para o Menu Lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Começa fora da tela à esquerda (ajuste a largura conforme necessário) */
+  width: 150px; /* Largura do menu */
+  height: 100vh; /* Altura total da tela */
+  background-color: #2c3e50; /* Cor de fundo do menu */
+  color: white;
+  padding: 0px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  transition: left 0.3s ease-in-out; /* Animação de deslize */
+  z-index: 1001; /* Garante que o menu fique acima do conteúdo da página, mas abaixo do botão de toggle se sobreposto */
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.open {
+  left: 0; /* Move o menu para dentro da tela */
+}
+
+.side-menu-close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px; /* Tamanho do ícone 'X' */
+  cursor: pointer;
+  align-self: flex-end; /* Alinha o botão 'X' à direita dentro do menu */
+  margin-bottom: 20px;
+  display: none;
+}
+
+.side-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu nav ul li {
+  margin-bottom: 15px;
+}
+
+.side-menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.side-menu nav ul li a:hover {
+  background-color: var(--cor-iconMidia); /* Cor de hover para os links */
+}
+
+/* Estilos para o Overlay (fundo escurecido) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 4, 5, 0.5); /* Cor preta com 50% de opacidade */
+  z-index: 1000; /* Abaixo do menu, mas acima do conteúdo da página */
+  display: none; /* Escondido por padrão */
+}
+
+.overlay.open {
+  display: block; /* Mostra o overlay quando o menu está aberto */
+}
+
+
+
+.menu{
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  position: fixed;
+  z-index: 5;
+  margin-top: 0px;
+}
+
+.menu-background{
+  display: inline-flex;
+  position: fixed;
+  z-index: -5px;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  margin-top: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/images/desmumtz13.jpg");
+  height: 150px;
+  min-width: 500px;
+  background-position: center;
+  overflow: hidden;
+  animation: identifier 3s ease-in-out infinite;
+}
+
+@keyframes identifier {
+  
+  0%{
+      background-size: 100%;
+      transform: translateX(0%);
+      
+  }
+  25%{ 
+      background-size: 70%;
+      transform: translateX(7%);
+  }
+  50%{
+       background-size: 100%;
+       transform: translateX(0%);
+  } 
+  75%{
+       background-size: 70%;
+       transform: translateX(-5%);
+
+  }
+  100%{
+       background-size: 100%;
+       transform: translateX(0%);
+  }
+
+}
+.menu-nav1{
+  display: flex;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 50px;
+  background-color:var(--cor-menu-barra);
+  z-index: 1;
+  
+}
+
+.menu-nav2{
+  display: flex;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100%;
+  background-color:var(--cor-menu-barra);
+  z-index: 1;
+  
+}
+
+
+
+.menu-fundo{
+  margin: 0;
+  padding: 0;
+  background-color:var(--cor-menu-barra);
+  display: flexbox;
+  position: fixed;
+  border-radius: 0 0 50% 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+
+.foto-perfil img{ 
+  margin: 8px;
+  padding: 0px;
+  display: flexbox;
+  position: fixed;
+  background-color: #9085859c;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid #5675a8;
+  box-shadow: 0px 0px 5px #000000;
+  z-index: 2;
+}
+
+.social-midia .sm1 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 200px;
+  margin-left: 0px;
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  font-size: 3rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm2 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 300px;
+  margin-left: 0px;
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  font-size: 3rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm3 a{
+
+  display: block;
+  position: fixed;
+  margin-top: 400px;
+  margin-left: 0px;
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  font-size: 3rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+.social-midia .sm4 a{
+
+  display: block;
+  position: fixed;
+  margin-top:500px;
+  margin-left: 0px;
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  font-size: 3rem;
+  color: var(--cor-iconMidia);
+  z-index: 5;
+}
+
+
+section{
+  display: inline-flexbox;
+  position: -ms-page;
+  margin: 0;
+  padding:0;
+  margin-left: -100px;
+  margin-top: 0;
+  width: 100px;
+  height: 770px;
+  z-index: -5;
+}
+
+
+
+.home-content{
+  display: flexbox;
+  position: absolute;
+  margin: 0px;
+  padding: 20px;
+  background-color: var(--cor-conteiner1);
+  margin-top: 150px;
+  margin-left: 150px;
+  width: 400px;
+  height: 770px;
+  z-index: -3px;
+}
+
+.home-tag{
+   
+    color: #ffffff;
+    margin-top: 0px;
+    padding:5px;
+    background-color: #d9dfe33e;
+    border-radius: 5%;
+}
+
+section .home-content .home-tag span{
+  color: #66ff00;
+}
+
+section .home-content .home-tag h3{
+  color: #2ac0a7;
+  word-spacing: 6px;
+  line-height: 5px;
+  text-align:  left;
+
+  font-family: 'Jost', sans-serif;
+}
+
+section .home-content .home-tag p{
+  display: -moz-grid;
+  padding: 2px;
+  background-color: #d9dfe33e;
+  color: #ffffff;
+  text-align:  justify;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+ .ImgSkill img{
+  
+  margin: 0px;
+  padding: 0px;
+  display: -moz-grid;
+  position: absolute;
+  background-color: #9085859c;
+  height: 250px;
+  width:380px;
+  z-index: 0;
+}
+
+footer{
+  
+  font-size: calc(10px + 2vmin);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-02);
+
+}
+}
+
+
+
